@@ -57,3 +57,20 @@ string favGame;
 favGame = (string)sstupid[1];
 //Print favGame to console.
 Console.WriteLine(favGame);
+
+//Create another hashtable using collection-initializer syntax, called capitals.
+Hashtable Capitals = new Hashtable()
+{
+    {"Oklahoma", "OKC" },
+    {"Texas", "Austin" },
+    {"Oregon", "Salem" }
+};
+//Initialize it with a few states as the key and the capital of that state as the value.
+
+//Loop through the capitals hashtable and print out the DictionaryEntry objects key and value on a new line("Key: <Key>, Value: <Value>").
+foreach (DictionaryEntry state in Capitals)
+{
+    Console.WriteLine($"Key: {state.Key}, Value: {state.Value}");
+}
+//Clear all elements in the capitals hashtable.
+Capitals.Clear();
